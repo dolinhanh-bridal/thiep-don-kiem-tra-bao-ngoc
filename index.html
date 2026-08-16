@@ -244,6 +244,10 @@
   /* ---------- RSVP (khong co loi chuc/wishes-wall - ban GitHub Pages tinh) ---------- */
   .rsvp-wrap { max-width: 480px; margin: 0 auto; }
   form#rsvpForm { display: flex; flex-direction: column; gap: 16px; }
+  /* BAT BUOC: display:flex o tren de len thuoc tinh [hidden], khong co dong nay
+     thi bam Gui xong form van hien, khach tuong chua gui va bam lai nhieu lan
+     (da dinh 16/08/2026 — Sheet ra may dong trung). */
+  form#rsvpForm[hidden] { display: none; }
   .field { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
   .field input, .field select, .field textarea { min-width: 0; width: 100%; }
   .field label { font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--charcoal-soft); }
